@@ -10,7 +10,7 @@ const Logout = () => {
     useEffect(() => {
         const logoutUser = async () => {
             try {
-                await fetch("http://localhost:5000/logout", {
+                await fetch("https://fullstack-mern-lebd.onrender.com", {
                     method: "GET",
                     credentials: "include"
                 });
