@@ -17,7 +17,7 @@ const Contact = () => {
   // ------- GET USER DATA ------
   const userContact = async () => {
     try {
-      const res = await fetch("https://fullstack-mern-lebd.onrender.com", {
+      const res = await fetch("http://localhost:5000/getdata", {
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -55,7 +55,7 @@ const Contact = () => {
     const { name, email, phone, message } = userData;
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("http://localhost:5000/getdata", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         credentials: "include",
