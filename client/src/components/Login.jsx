@@ -22,7 +22,7 @@ const Login = () => {
   const loginUser = async (e) => {
     e.preventDefault();
 
-    const res = await fetch("https://fullstack-mern-lebd.onrender.com", {
+    const res = await fetch("http://localhost:5000/signin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
