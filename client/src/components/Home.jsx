@@ -8,7 +8,7 @@ const Home = () => {
     // Fetch user
     const fetchUser = async () => {
         try {
-            const res = await fetch("https://fullstack-mern-lebd.onrender.com", {
+            const res = await fetch("http://localhost:5000/getdata", {
                 method: "GET",
                 headers: {
                     Accept: "application/json",
